@@ -29,7 +29,7 @@ public class HttpUrlChecker{
 
 
     public static Matcher getMatcher(String input){
-        Pattern pattern = Pattern.compile("(http://)([^.]*(.*)+)(([.][a-z]+)+)");
+        Pattern pattern = Pattern.compile("(https?://)([^.]*(.*)+)(([.][a-z]+)+)");
         Matcher matcher = pattern.matcher(input);
         return matcher;
     }
